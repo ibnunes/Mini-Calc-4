@@ -1,0 +1,91 @@
+﻿<html>
+	
+<head>
+	<title>Access to memory</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="generator" content="HelpNDoc Personal Edition 4.6.2.573">
+	
+	<link type="text/css" rel="stylesheet" media="all" href="css/reset.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="css/base.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="css/hnd.css" />
+	<!--[if lte IE 8]>
+		<link type="text/css" rel="stylesheet" media="all" href="css/ielte8.css" />
+	<![endif]-->
+	<style type="text/css">
+		#topic_header
+		{
+			background-color: #EFEFEF;
+		}
+	</style>
+	<script type="text/javascript" src="js/chmRelative.js"></script>
+	
+	</head>
+
+<body>
+
+<div id="topic_header">
+			<div id="topic_header_content">
+				<h1>Access to memory</h1>
+				
+				<div id="topic_breadcrumb">
+					<a href="Calculator.htm">Calculator</a> &rsaquo;&rsaquo; </div>
+				</div>
+			<div id="topic_header_nav">
+				<a href="Calculator.htm"><img src="img/arrow_up.png" alt="Parent"/></a>
+				
+				<a href="Usingconditionals.htm"><img src="img/arrow_left.png" alt="Previous"/></a>
+				
+				<a href="Trigonometry.htm"><img src="img/arrow_right.png" alt="Next"/></a>
+				
+				</div>
+			<div class="clear"></div>
+		</div>
+	<div id="topic_content">
+		
+<p></p>
+<p class="rvps2"><span class="rvts18">2.3. Access to memory</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">The memory has more than 50 numeric variables, but each and everyone of them has a specific role in the program. Some functionalities use some of this variables to store their results, ignoring if it has already a value or not. Other variables have the name of its purpose - e.g., </span><span class="rvts15">stddev</span><span class="rvts6"> is a variable used for statistical analysis, so you must not save values in it because you'll lose your data.</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">You can access any of these variables via the </span><a class="rvts25" href="Calculator.htm">calculator</a><span class="rvts6">, and you can either read then or write on them (except for constants, which are read-only). For that, you must just enter the name of the variable: for example, the expression "</span><span class="rvts15">2+a</span><span class="rvts6">" has a reference for a </span><span class="rvts15">rtFloat</span><span class="rvts6"> variable, so Mini Calc will replace the identifier with its value.</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">Whenever you introduce an expression that returns a </span><span class="rvts15">rtFloat</span><span class="rvts6"> or a </span><span class="rvts15">rtInteger</span><span class="rvts6">, the variable </span><span class="rvts15">ans</span><span class="rvts6"> is updated with its result.</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">Mini Calc cannot store its data on ten particular memories which are reserved for the user - </span><span class="rvts15">mem1</span><span class="rvts6"> to </span><span class="rvts15">mem10</span><span class="rvts6">. This memories are the most secure of all once Mini Calc has no write-access to them except when the user explicitly orders it to access them.</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts12">Reading from a variable</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">If you need to use a value from a variable, just write its identifier - Mini Calc will detect it and replace it with its value.</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">Some variables are, in fact, </span><a class="rvts25" href="Constants.htm">constants</a><span class="rvts6"> - they are variables specially identified to not be accessed by any means. If you try to save data in this constants, Mini Calc will just ignore it.</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts12">Writing on a variable</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">From the calculator, you can attribute values to variables, i.e., you can save data by writing on them. For that, there is a special command that allows you to do it:</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts31">save.</span><span class="rvts40">identifier </span><span class="rvts39">expression</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">If you want to save the result of the expression "2+tan(degtorad(45))" into the variable mem1, you must type this:</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts41">save.mem1 2+tan(degtorad(45))</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">Mini Calc will inform you if the data was successfully saved by showing the message «</span><span class="rvts42">Saved in "mem1"</span><span class="rvts6">».</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p></p>
+<p class="rvps4"><span class="rvts16">Created with the Personal Edition of HelpNDoc: </span><a class="rvts17" href="http://www.helpndoc.com/create-epub-ebooks">Write EPub books for the iPad</a></p>
+</div>
+	
+	<div id="topic_footer">
+
+			<div id="topic_footer_content">
+				Copyright &copy; &lt;2009-2015 by Igor Nunes. All Rights Reserved.</div>
+		</div>
+	</body>
+	
+</html>
+

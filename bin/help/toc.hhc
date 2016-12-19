@@ -1,0 +1,277 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html>
+
+<head>
+	<meta name="generator" content="HelpNDoc Personal Edition 4.6.2.573">
+</head>
+
+<body>
+
+	<object type="text/site properties">
+		<param name="Font" value="Arial,8,0">
+		<param name="Window Styles" value="0x800025">
+	</object>
+    
+	<ul>
+
+	<li> <object type="text/sitemap">
+				<param name="Name" value="Introduction">
+				<param name="Local" value="Introduction.htm">
+				</object>
+
+	<ul><li> <object type="text/sitemap">
+				<param name="Name" value="What is Mini Calc?">
+				<param name="Local" value="WhatisMiniCalc.htm">
+				</object>
+
+	</li><li> <object type="text/sitemap">
+				<param name="Name" value="A bit of history">
+				<param name="Local" value="Abitofhistory.htm">
+				</object>
+
+	</li><li> <object type="text/sitemap">
+				<param name="Name" value="What's new">
+				<param name="Local" value="Whatsnew.htm">
+				</object>
+
+	</li></ul></li><li> <object type="text/sitemap">
+				<param name="Name" value="Getting Started">
+				<param name="Local" value="GettingStarted.htm">
+				</object>
+
+	<ul><li> <object type="text/sitemap">
+				<param name="Name" value="System requirements">
+				<param name="Local" value="Systemrequirements.htm">
+				</object>
+
+	</li><li> <object type="text/sitemap">
+				<param name="Name" value="A quick tour through Mini Calc">
+				<param name="Local" value="AquicktourthroughMiniCalc.htm">
+				</object>
+
+	</li></ul></li><li> <object type="text/sitemap">
+				<param name="Name" value="Main Menu">
+				<param name="Local" value="MainMenu.htm">
+				</object>
+
+	</li><li> <object type="text/sitemap">
+				<param name="Name" value="Calculator">
+				<param name="Local" value="Calculator.htm">
+				</object>
+
+	<ul><li> <object type="text/sitemap">
+				<param name="Name" value="Types of arguments and results">
+				<param name="Local" value="Typesofargumentsandresults.htm">
+				</object>
+
+	</li><li> <object type="text/sitemap">
+				<param name="Name" value="Constants">
+				<param name="Local" value="Constants.htm">
+				</object>
+
+	</li><li> <object type="text/sitemap">
+				<param name="Name" value="Functions">
+				<param name="Local" value="Functions.htm">
+				</object>
+
+	<ul><li> <object type="text/sitemap">
+				<param name="Name" value="Numeric">
+				<param name="Local" value="Numeric.htm">
+				</object>
+
+	</li><li> <object type="text/sitemap">
+				<param name="Name" value="String">
+				<param name="Local" value="String.htm">
+				</object>
+
+	</li><li> <object type="text/sitemap">
+				<param name="Name" value="Date and Time">
+				<param name="Local" value="DateandTime.htm">
+				</object>
+
+	</li><li> <object type="text/sitemap">
+				<param name="Name" value="Boolean">
+				<param name="Local" value="Boolean.htm">
+				</object>
+
+	</li><li> <object type="text/sitemap">
+				<param name="Name" value="Conversion">
+				<param name="Local" value="Conversion1.htm">
+				</object>
+
+	</li><li> <object type="text/sitemap">
+				<param name="Name" value="Using conditionals">
+				<param name="Local" value="Usingconditionals.htm">
+				</object>
+
+	</li></ul></li><li> <object type="text/sitemap">
+				<param name="Name" value="Access to memory">
+				<param name="Local" value="Accesstomemory.htm">
+				</object>
+
+	</li></ul></li><li> <object type="text/sitemap">
+				<param name="Name" value="Trigonometry">
+				<param name="Local" value="Trigonometry.htm">
+				</object>
+
+	<ul><li> <object type="text/sitemap">
+				<param name="Name" value="Analysis of angle">
+				<param name="Local" value="Analysisofangle.htm">
+				</object>
+
+	</li><li> <object type="text/sitemap">
+				<param name="Name" value="Unit circle">
+				<param name="Local" value="Unitcircle.htm">
+				</object>
+
+	</li><li> <object type="text/sitemap">
+				<param name="Name" value="Table and identity circle">
+				<param name="Local" value="Tableandidentitycircle.htm">
+				</object>
+
+	</li></ul></li><li> <object type="text/sitemap">
+				<param name="Name" value="Equations">
+				<param name="Local" value="Equations.htm">
+				</object>
+
+	<ul><li> <object type="text/sitemap">
+				<param name="Name" value="Function editor">
+				<param name="Local" value="Functioneditor.htm">
+				</object>
+
+	<ul><li> <object type="text/sitemap">
+				<param name="Name" value="Graphical calculator">
+				<param name="Local" value="Graphicalcalculator.htm">
+				</object>
+
+	</li><li> <object type="text/sitemap">
+				<param name="Name" value="Table of values">
+				<param name="Local" value="Tableofvalues.htm">
+				</object>
+
+	</li><li> <object type="text/sitemap">
+				<param name="Name" value="Using conditionals">
+				<param name="Local" value="Usingconditionals1.htm">
+				</object>
+
+	</li></ul></li><li> <object type="text/sitemap">
+				<param name="Name" value="Quadratic formula">
+				<param name="Local" value="Quadraticformula.htm">
+				</object>
+
+	<ul><li> <object type="text/sitemap">
+				<param name="Name" value="Using 'quadeq'">
+				<param name="Local" value="Usingquadeq.htm">
+				</object>
+
+	</li></ul></li></ul></li><li> <object type="text/sitemap">
+				<param name="Name" value="Lists and Statistics">
+				<param name="Local" value="ListsandStatistics.htm">
+				</object>
+
+	<ul><li> <object type="text/sitemap">
+				<param name="Name" value="VLM - Visual List Manager">
+				<param name="Local" value="VLMVisualListManager.htm">
+				</object>
+
+	<ul><li> <object type="text/sitemap">
+				<param name="Name" value="Managing lists and values">
+				<param name="Local" value="Managinglistsandvalues.htm">
+				</object>
+
+	</li><li> <object type="text/sitemap">
+				<param name="Name" value="Using formulas">
+				<param name="Local" value="Usingformulas.htm">
+				</object>
+
+	</li></ul></li><li> <object type="text/sitemap">
+				<param name="Name" value="Statistics">
+				<param name="Local" value="Statistics.htm">
+				</object>
+
+	<ul><li> <object type="text/sitemap">
+				<param name="Name" value="1-Var Stat">
+				<param name="Local" value="1VarStat.htm">
+				</object>
+
+	</li><li> <object type="text/sitemap">
+				<param name="Name" value="2-Var Stat">
+				<param name="Local" value="2VarStat.htm">
+				</object>
+
+	</li><li> <object type="text/sitemap">
+				<param name="Name" value="Linear regression">
+				<param name="Local" value="Linearregression.htm">
+				</object>
+
+	</li></ul></li></ul></li><li> <object type="text/sitemap">
+				<param name="Name" value="Random">
+				<param name="Local" value="Random.htm">
+				</object>
+
+	<ul><li> <object type="text/sitemap">
+				<param name="Name" value="Introduce data">
+				<param name="Local" value="Introducedata.htm">
+				</object>
+
+	</li><li> <object type="text/sitemap">
+				<param name="Name" value="Analyze results">
+				<param name="Local" value="Analyzeresults.htm">
+				</object>
+
+	</li></ul></li><li> <object type="text/sitemap">
+				<param name="Name" value="Tools">
+				<param name="Local" value="Tools.htm">
+				</object>
+
+	<ul><li> <object type="text/sitemap">
+				<param name="Name" value="Stopwatch">
+				<param name="Local" value="Stopwatch.htm">
+				</object>
+
+	<ul><li> <object type="text/sitemap">
+				<param name="Name" value="Color code of status">
+				<param name="Local" value="Colorcodeofstatus.htm">
+				</object>
+
+	</li><li> <object type="text/sitemap">
+				<param name="Name" value="Running the stopwatch">
+				<param name="Local" value="Runningthestopwatch.htm">
+				</object>
+
+	</li><li> <object type="text/sitemap">
+				<param name="Name" value="Manage timings">
+				<param name="Local" value="Managetimings.htm">
+				</object>
+
+	</li></ul></li></ul></li><li> <object type="text/sitemap">
+				<param name="Name" value="System">
+				<param name="Local" value="System.htm">
+				</object>
+
+	<ul><li> <object type="text/sitemap">
+				<param name="Name" value="Memory Manager">
+				<param name="Local" value="MemoryManager.htm">
+				</object>
+
+	</li><li> <object type="text/sitemap">
+				<param name="Name" value="File Memory">
+				<param name="Local" value="FileMemory.htm">
+				</object>
+
+	</li><li> <object type="text/sitemap">
+				<param name="Name" value="Internal commands">
+				<param name="Local" value="Internalcommands.htm">
+				</object>
+
+	</li><li> <object type="text/sitemap">
+				<param name="Name" value="Exception Manager">
+				<param name="Local" value="ExceptionManager.htm">
+				</object>
+
+	</li></ul></li></ul>
+    
+</body>
+
+</html>
+

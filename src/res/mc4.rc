@@ -1,0 +1,24 @@
+AppIcon ICON "calculator_icon.ico"
+
+1 VERSIONINFO  
+FILEVERSION 4, 1, 2, 0  
+PRODUCTVERSION 4, 1, 2, 0  
+FILEFLAGSMASK 0  
+FILEOS 0x40000  
+FILETYPE 1  
+{  
+ BLOCK "StringFileInfo"  
+ {  
+  BLOCK "0x0409"  
+  {  
+   VALUE "CompanyName", "Igor Nunes Software"  
+   VALUE "FileDescription", "Minimalist Calculator for Windows"  
+   VALUE "FileVersion", "4.1.2"  
+   VALUE "InternalName", "minicalc"  
+   VALUE "LegalCopyright", "GNU Public License"  
+   VALUE "OriginalFilename", "minicalc"  
+   VALUE "ProductName", "Mini Calc"  
+   VALUE "ProductVersion", "4.1.2"  
+  }  
+ }  
+}

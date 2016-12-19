@@ -1,0 +1,110 @@
+﻿<html>
+	
+<head>
+	<title>Using conditionals</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="generator" content="HelpNDoc Personal Edition 4.6.2.573">
+	
+	<link type="text/css" rel="stylesheet" media="all" href="css/reset.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="css/base.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="css/hnd.css" />
+	<!--[if lte IE 8]>
+		<link type="text/css" rel="stylesheet" media="all" href="css/ielte8.css" />
+	<![endif]-->
+	<style type="text/css">
+		#topic_header
+		{
+			background-color: #EFEFEF;
+		}
+	</style>
+	<script type="text/javascript" src="js/chmRelative.js"></script>
+	
+	</head>
+
+<body>
+
+<div id="topic_header">
+			<div id="topic_header_content">
+				<h1>Using conditionals</h1>
+				
+				<div id="topic_breadcrumb">
+					<a href="Calculator.htm">Calculator</a> &rsaquo;&rsaquo; <a href="Functions.htm">Functions</a> &rsaquo;&rsaquo; </div>
+				</div>
+			<div id="topic_header_nav">
+				<a href="Functions.htm"><img src="img/arrow_up.png" alt="Parent"/></a>
+				
+				<a href="Conversion1.htm"><img src="img/arrow_left.png" alt="Previous"/></a>
+				
+				<a href="Accesstomemory.htm"><img src="img/arrow_right.png" alt="Next"/></a>
+				
+				</div>
+			<div class="clear"></div>
+		</div>
+	<div id="topic_content">
+		
+<p></p>
+<p class="rvps2"><span class="rvts18">2.3.6. Using conditionals</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">Conditionals are a special feature of Mini Calc which allows to return different values based on one condition. For example, if </span><span class="rvts30">x&lt;0</span><span class="rvts6"> we want to calculate </span><span class="rvts30">x/2-5</span><span class="rvts6">, but if </span><span class="rvts30">x&gt;0</span><span class="rvts6"> we rather want </span><span class="rvts30">x/2+5</span><span class="rvts6">.</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps5"><span class="rvts34">is</span><span class="rvts35">(condition : rtBoolean) : rtInteger</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">This function is essentially a converter with a very special behavior - it only returns two possible values:</span></p>
+<ul style="text-indent: 0px; margin-left: 24px; list-style-position: outside; list-style-type: disc;">
+<li class="rvps2"><span class="rvts6">If the condition os </span><span class="rvts15">True</span><span class="rvts6">, then it'll return </span><span class="rvts15">1</span><span class="rvts6">;</span></li>
+<li class="rvps2"><span class="rvts6">Otherwise, it'll return </span><span class="rvts15">0</span><span class="rvts6">.</span></li>
+</ul>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">So, you only have to multiply the part of the equation in which you want a condition by this function. For the given example, we would have this:</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts36">(x/2-5)*is(x&lt;0) + (x/2+5)*is(x&gt;0)</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">When the condition is False, the function will return 0, and as any number multiplied by zero is zero, the respective term is abolished.</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">However, when you're using the graphical calculator, you'll see that, between these two conditions, there is a visible "jump".</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><img width="540" height="450" alt="" style="padding : 1px;" src="lib/mcGraph_cond_jump.png"></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">There is a little trick available in Mini Calc to make that jump disappear.</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">The graphical calculator computes each point to be displayed and determines if the point is valid. If not, it'll not be drawn. As the </span><span class="rvts20">is</span><span class="rvts6"> makes the function return 0 when all conditionals fail - and 0 is a valid point -, we have to "fool the system" and force it to believe that the point is invalid so it won't be displayed.</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">With that purpose there is this function:</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps5"><span class="rvts34">is!</span><span class="rvts35">(condition : rtBoolean) : rtInteger</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<ul style="text-indent: 0px; margin-left: 24px; list-style-position: outside; list-style-type: disc;">
+<li class="rvps2"><span class="rvts6">If the condition is </span><span class="rvts15">False</span><span class="rvts6">, it returns </span><span class="rvts15">1</span><span class="rvts6"> - this is totally different from the </span><span class="rvts20">is</span><span class="rvts6"> function!</span></li>
+<li class="rvps2"><span class="rvts6">If the condition is </span><span class="rvts15">True</span><span class="rvts6">, it will raise an error (Division By Zero). Because of this error, the graphical calculator assumes that the point is invalid and it isn't drawn.</span></li>
+</ul>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">Therefore, the condition is determine the points where there isn't a definition in the function.</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">So, lets add this "tweak" - at </span><span class="rvts15">x=0</span><span class="rvts6"> we have no definition, so we'll add this with the </span><span class="rvts20">is!</span><span class="rvts6"> function:</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts36">(x/2-5)*is(x&lt;0) + (x/2+5)*is(x&gt;0) </span><span class="rvts37">* is!(x=0)</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">And now the resulting graphic is this:</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps3"><img width="540" height="450" alt="" style="padding : 1px;" src="lib/mcGraph_cond_NOjump.png"></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts38">Be careful, though!</span><span class="rvts6"> Depending on the zoom definitions, the graphical calculator can jump this conditional and the "jump" gets visible. In other cases, the system can refuse to assume the equation for some unexpected error with this conditional - this is normal since we are tweaking the system forcing the generation of errors.</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p></p>
+<p class="rvps4"><span class="rvts16">Created with the Personal Edition of HelpNDoc: </span><a class="rvts17" href="http://www.helpndoc.com/feature-tour/iphone-website-generation">iPhone web sites made easy</a></p>
+</div>
+	
+	<div id="topic_footer">
+
+			<div id="topic_footer_content">
+				Copyright &copy; &lt;2009-2015 by Igor Nunes. All Rights Reserved.</div>
+		</div>
+	</body>
+	
+</html>
+
